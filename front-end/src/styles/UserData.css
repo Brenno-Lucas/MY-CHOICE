@@ -1,0 +1,34 @@
+.user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.user-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+#user-img {
+  margin-top: 1%;
+  height: 15vh;
+  cursor: pointer;
+}
+
+#pen-editor-img {
+  margin-left: 1%;
+  height: 3vh;
+  cursor: pointer;
+}
+
+#input-edit-username{
+  border-radius: 1%;
+}
+
+#input-edit-userimg{
+  border-radius: 1%;
+}

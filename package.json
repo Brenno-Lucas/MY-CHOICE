@@ -1,0 +1,14 @@
+{
+  "name": "projeto_my-choice",
+  "version": "1.0.0",
+  "description": "O projeto tem como intuito escolher qual jogo você irá jogar dentro de uma lista formada pelo próprio jogador, para evitar aquela dúvida rotineira de todos os gamers.\r A aplicação estará disponivel nesse link: .",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start-pasta1 && npm run start-pasta2",
+    "start-pasta1": "cd ./front-end && npm install && npm start",
+    "start-pasta2": "cd ./back-end && npm install && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
