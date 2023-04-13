@@ -3,10 +3,9 @@ import axios from 'axios';
 const GetGameSearched = async (gameName) => {
   const getGames = await axios({
     method: 'GET',
-    url: `http://localhost:3001/games/getAll`,
+    url: `https://my-choice-back-end.vercel.app/games/getAll`,
     headers: { gameName },
   });
-  console.log(getGames.data);
   return getGames.data;
 };
 
