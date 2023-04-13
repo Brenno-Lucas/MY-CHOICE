@@ -7,7 +7,7 @@ const GamesRoute = require('./routes/games.router');
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://my-choice-back-end.vercel.app',
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH'],
 };
 
