@@ -3,6 +3,7 @@ const cors = require('cors');
 require('dotenv').config()
 
 const GamesRoute = require('./routes/games.router');
+const GenresRoute = require('./routes/genres.router');
 
 const app = express();
 
@@ -17,6 +18,8 @@ app.use(express.static('public'));
 app.use(cors(corsOptions));
 
 app.use('/games', GamesRoute);
+
+app.use('/genres', GenresRoute);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {
