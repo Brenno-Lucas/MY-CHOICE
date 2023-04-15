@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { saveItem } from '../services/UseLocalStorage'
 import { validateLength, validateEmail, checkInput, handleChange } from '../services/Validation'
+import { Input } from '../components/Elements';
 
 export default function Login() {
   const [isEmailValid, setIsEmailValid] = useState(false);
@@ -42,7 +43,7 @@ export default function Login() {
         className='login-form'
         onSubmit={ (e) => handleSubmit(e) }
       >
-        <input
+        <Input 
           className='input-login'
           type="text"
           name="userName"
@@ -50,7 +51,7 @@ export default function Login() {
           value={ loginInfo.userName }
           onChange= { (e) => handleChange(e, setLoginInfo) }
         />
-        <input
+        <Input 
           className='input-login'
           type="email"
           name="email"
@@ -58,7 +59,7 @@ export default function Login() {
           value= { loginInfo.email }
           onChange= { (e) => handleChange(e, setLoginInfo) }
         />
-        <input
+        <Input 
           className='input-login'
           type="password"
           name="password"

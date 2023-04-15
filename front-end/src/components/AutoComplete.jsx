@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AuthContext } from '../providers/auth';
-import { GetGameSearched } from '../services/SearchGames';
+import { getSearch } from '../services/SearchData';
 import propTypes from 'prop-types';
 
 export default function AutoComplete(props) {
@@ -10,17 +10,18 @@ export default function AutoComplete(props) {
   const [games, setGames] = useState([]);
 
   const gamesSearch = async (param) => {
-    const getGames = await GetGameSearched(param);
+    const getGames = await getSearch(param, 'games');
     const gamesSearched = getGames.filter((item) => {
       const names = item.name.toLowerCase().replaceAll(' ', '');
       return names.includes(param.toLowerCase().replaceAll(' ', ''));
     });
+    console.log(gamesSearched);
     setGames(gamesSearched);
   }
+  
 
   const insertGameName = (e) => {
     const { target } = e;
-    console.log(target.innerText);
     setSelectedGame(target.innerText);
     setGames([]);
   };

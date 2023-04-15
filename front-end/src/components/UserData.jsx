@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { saveItem, getItem } from '../services/UseLocalStorage';
-import { handleChange, validateLength } from '../services/Validation';
-import { correctIcon, editIcon } from '../images';
+import React, { useState, useEffect } from "react";
+import { saveItem, getItem } from "../services/UseLocalStorage";
+import { handleChange, validateLength } from "../services/Validation";
+import { correctIcon, editIcon } from "../images";
+import { Input } from "./Elements"
 
 export default function UserData() {
   
@@ -41,10 +42,8 @@ export default function UserData() {
   const setUserImg = () => {
     if (isEditUserIMG === false) {
       setIsUserImg(true);
-      console.log(isValidUserName);
     } 
     else if (isValidUserIMG === true ) {
-      console.log(userImg);
       saveItem('UserData', {
         UserName,
         UserImage: userImg,
@@ -62,7 +61,7 @@ export default function UserData() {
       >
         <p>
           Nome de Usuário: { isEditUserName === false ? UserName : (
-            <input 
+            <Input 
               type="text"
               name="userName"
               id='input-edit-username'
@@ -88,7 +87,7 @@ export default function UserData() {
           Foto de perfil
         </p>
         { isEditUserIMG && (
-          <input 
+          <Input 
             type="text"
             name="userImg"
             placeholder='Adicione a URL da imagem'

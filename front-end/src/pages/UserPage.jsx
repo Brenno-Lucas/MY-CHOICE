@@ -14,6 +14,8 @@ export default function UserPage() {
     history.push(`/Game`);
   };
   
+  console.log(!games);
+
   return(
     <div>
       <Header />
@@ -21,7 +23,7 @@ export default function UserPage() {
       <section
         className='saved-games'
       >
-        { games.map(({ name, background_image }) => (
+        { !!games && games.map(({ name, background_image }) => (
             <div
               className='saved-game'
               key={ name }

@@ -4,6 +4,9 @@ require('dotenv').config()
 
 const GamesRoute = require('./routes/games.router');
 const GenresRoute = require('./routes/genres.router');
+const RaffleRoute = require('./routes/raffle.router');
+const DevelopersRoute = require('./routes/developers.router');
+const PublishersController = require('./routes/publishers.router');
 
 const app = express();
 
@@ -20,6 +23,12 @@ app.use(cors(corsOptions));
 app.use('/games', GamesRoute);
 
 app.use('/genres', GenresRoute);
+
+app.use('/raffle', RaffleRoute);
+
+app.use('/developers', DevelopersRoute);
+
+app.use('/publishers', PublishersController);
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

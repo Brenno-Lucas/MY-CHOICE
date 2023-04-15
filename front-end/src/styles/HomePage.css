@@ -1,84 +1,30 @@
-.initial-page {
-  margin-top: 4%;
+.type-search {
+  margin-top: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   justify-items: center;
 }
 
-.div-search{
-  width: 30%;
-}
-
-.raffledItem {
-  margin-left: 5%;
-  text-align: center;
-  display: inline-block;
-  width: 30%;
-  height: 30%;
-}
-
-.auto-complete {
-  background-color: white;
-  color: black;
-  border: 1px black solid;
-  border-top: 0px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 56%;
-  font-size: 0.90vw;
-  cursor: pointer;
-}
-
-.game-list {
-  margin-left: 14%;
-  color: white;
-}
-
-#game-name {
-  margin-top: 2px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-#game-name:hover {
-  background-color: rgb(0, 160, 0);
-}
-
-#game-image {
+#type-search-section {
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
-#remove-game-button{
-  margin-left: 2%;
-  border: 2px solid gray;
-  border-top: 0px;
-  border-left: 0px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#game-name-input{
-  width: 55%;
-  font-size: large;
-}
-
-#add-game-button, #draw-game-button{
-  font-size: large;
-  margin-left: 2%;
-  border: 0px;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-radius: 5%;
-  background-color: rgb(251, 12, 6);
+#type-search-btn {
+  width: 24vh;
+  height: 4vh;
+  border: 0;
+  border-radius: 8px;
+  border-right: 0.5vh black solid;
+  border-bottom: 0.5vh black solid;
+  font-size: 2.5vh;
+  background-color: blue;
   color: white;
 }
 
-#add-game-button:active, #draw-game-button:active{
-  transform: translateY(1px);
-}
-
-#add-game-button:disabled, #draw-game-button:disabled{
-  background-color: rgb(112, 128, 144);
+#change-filter-type {
+  position: absolute;
+  margin-right: 80%;
+  max-width: 6%;
 }
