@@ -1,11 +1,11 @@
 const Router = require('express');
-const ReleaseController = require('../controllers/release.controller');
+const RaffleController = require('../controllers/raffle.controller');
 
 const router = Router();
 
 router.get(
   '/getAll',
-  ReleaseController.getAll,
+  RaffleController.getAll,
 );
 
 module.exports = router;
