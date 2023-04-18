@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import SearchFilters from '../components/homepage/SearchFilters'
-import SearchManual from '../components/homepage/SearchManual'
-import { Header } from '../components';
+import React, { useContext } from 'react';
+import { SearchFilters, SearchManual, InitialPage } from '../components/homepage'
+import { Header, Footer } from '../components';
+import { AuthContext } from '../providers/auth';
 import { Button } from '../components/Elements';
 
 export default function HomePage() {
-  const [typeSearch, setTypeSearch] = useState('');
+  const { typeSearch, setTypeSearch } = useContext(AuthContext)
 
   return(
     <div>
@@ -13,25 +13,9 @@ export default function HomePage() {
       <div
         className='type-search'
       >
-        { typeSearch === '' && (
-          <section
-            id='type-search-section'
-          >
-            <Button 
-              buttonName="MANUAL"
-              id="type-search-btn"
-              onClick={ () => setTypeSearch('manual') }
-              type="button"
-            />
-            <Button 
-              buttonName="FILTERS"
-              id="type-search-btn"
-              onClick={ () => setTypeSearch('filter') }
-              type="button"
-            />
-          </section>
-        ) }
-        { typeSearch !== '' && (
+        { typeSearch === '' && < InitialPage /> }
+      </div>
+      { typeSearch !== '' && (
           <Button 
             buttonName="ALTERAR FILTRAGEM"
             id="change-filter-type"
@@ -39,8 +23,8 @@ export default function HomePage() {
             type="button"
           />
         ) }
-      </div>
         { typeSearch === 'manual' ? <SearchManual /> : typeSearch === 'filter' && <SearchFilters /> }
+      <Footer />
     </div>
   )
 }

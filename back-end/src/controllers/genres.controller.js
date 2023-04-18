@@ -18,6 +18,6 @@ const getAllGenres = async (req, res) => {
   }
 }
 
-  module.exports = {
+module.exports = {
     getAllGenres,
-  };
+};

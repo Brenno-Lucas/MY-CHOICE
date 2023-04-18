@@ -3,6 +3,6 @@ const metacriticFilter = (response, metacritic) => {
   return filterMetacritc;
 };
 
-  module.exports = {
-    metacriticFilter,
-  };
+module.exports = {
+  metacriticFilter,
+};

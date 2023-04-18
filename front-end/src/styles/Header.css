@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'lemon-milk';
+  src: url('../fonts/lemon-milk/LEMONMILK-Bold.otf');
+}
+
 .header {
   display: flex;
   justify-content: space-around;
   height: 10vh;
-  background-color: #00755c;
+  background-color: #000B1D;;
   margin: 0;
   padding-left: 20vh;
 }
@@ -28,7 +33,7 @@
 #my-choice {
   cursor: pointer;
   font-weight: bold;
-  font-family: Impact;
+  font-family: 'lemon-milk';
   letter-spacing: 0.2vh;
   font-size: 4vh;
 }

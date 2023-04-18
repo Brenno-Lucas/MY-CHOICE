@@ -7,3 +7,4 @@ import './Footer.css';
 import './Login.css';
 import './Game.css';
 import './SearchManual.css';
+import './InitialPage.css';

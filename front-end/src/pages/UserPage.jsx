@@ -13,8 +13,6 @@ export default function UserPage() {
     saveItem('clickedGame', gameName.alt)
     history.push(`/Game`);
   };
-  
-  console.log(!games);
 
   return(
     <div>

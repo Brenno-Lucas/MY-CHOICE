@@ -5,26 +5,11 @@
   justify-items: center;
 }
 
-#type-search-section {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-#type-search-btn {
-  width: 24vh;
-  height: 4vh;
-  border: 0;
-  border-radius: 8px;
-  border-right: 0.5vh black solid;
-  border-bottom: 0.5vh black solid;
-  font-size: 2.5vh;
-  background-color: blue;
-  color: white;
-}
-
 #change-filter-type {
   position: absolute;
   margin-right: 80%;
   max-width: 6%;
 }
+
+
+

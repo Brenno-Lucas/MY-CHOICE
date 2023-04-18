@@ -6,7 +6,8 @@ const GamesRoute = require('./routes/games.router');
 const GenresRoute = require('./routes/genres.router');
 const RaffleRoute = require('./routes/raffle.router');
 const DevelopersRoute = require('./routes/developers.router');
-const PublishersController = require('./routes/publishers.router');
+const PublishersRoute = require('./routes/publishers.router');
+const MetacriticRoute = require('./routes/metacritic.router');
 
 const app = express();
 
@@ -28,7 +29,9 @@ app.use('/raffle', RaffleRoute);
 
 app.use('/developers', DevelopersRoute);
 
-app.use('/publishers', PublishersController);
+app.use('/publishers', PublishersRoute);
+
+app.use('/metacritic', MetacriticRoute)
 
 const port = process.env.PORT || 3001;
 app.listen(port, () => {

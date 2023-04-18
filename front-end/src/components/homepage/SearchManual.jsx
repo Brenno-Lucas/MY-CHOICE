@@ -31,7 +31,7 @@ export default function HomePage() {
 
   useEffect(()=> {
     const raffle = async () => {
-      const gameSearched = await getSearch(isDrawGame, 'games');
+      const gameSearched = await getSearch('name', isDrawGame, 'games');
       setGameObj(await gameSearched[0]);
     };
     if (isDrawGame !== '') {
