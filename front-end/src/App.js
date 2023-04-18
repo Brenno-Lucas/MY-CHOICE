@@ -9,11 +9,11 @@ import './styles';
 function App() {
   return (
     <Switch>
-          <Route exact path='/' component= { Login } />
-          <Route exact path='/HomePage' component= { HomePage } />
-          <Route exact path='/UserPage' component= { UserPage } />
-          <Route exact path='/Game' component= { Game } />
-        </Switch>
+      <Route exact path='/' component= { Login } />
+      <Route exact path='/HomePage' component= { HomePage } />
+      <Route exact path='/UserPage' component= { UserPage } />
+      <Route exact path='/Game' component= { Game } />
+    </Switch>
   );
 }
 
