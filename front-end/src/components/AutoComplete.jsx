@@ -33,20 +33,20 @@ export default function AutoComplete(props) {
   return (
     <>
       {games.length > 0 && (
-      <div
-        className='auto-complete'
-      >
-        { games.map(({ name }) => (
-        <span
-          key={ name }
-          name= { name }
-          id='game-name'
-          onClick={ (e) => insertGameName(e) }
+        <div
+          className='auto-complete'
         >
-          { name }
-        </span>
-        ))}
-      </div> 
+          { games.map(({ name }) => (
+            <span
+              key={ name }
+              name= { name }
+              id='game-name'
+              onClick={ (e) => insertGameName(e) }
+            >
+              { name }
+            </span>
+          ))}
+        </div> 
       )}
     </>
   )
