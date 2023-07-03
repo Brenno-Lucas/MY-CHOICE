@@ -3,7 +3,7 @@
 # Descrição do Projeto:
 
 O projeto tem como intuito escolher qual jogo você irá jogar dentro de uma lista formada pelo próprio jogador, para evitar aquela dúvida rotineira de todos os gamers.
-A aplicação estará disponivel nesse link: .
+A aplicação estará disponivel nesse link: https://my-choice-front-end.vercel.app.
 
 # Funcionalidades e Demonstração da Aplicação:
 
